@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #53ffab;
+    --text-color: #cee3e8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #202632;
+    font-family: 'Outfit', sans-serif;
+    margin: 0 20px;
+}
+
+main {
+    background-color: #313a49;
+    border-radius: 10px;
+    box-shadow: 10px 22px 32px 0px rgba(17,20,26,0.1);
+    height: 350px;
+    margin: 8rem auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+main .advice h6 {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .advice p {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    user-select: none;
+}
+
+main .advice img {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main > button {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    line-height: 0;
+    padding: 15px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > button img {
+    height: 20px;
+    width: 20px;
+}
+
+.attribution {
+    text-align: center;
+    display: flex;
+}
+
+.attribution span {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.attribution a {
+    background-color: rgba(143, 185, 248, 0.2);
+    border-radius: 5px;
+    color: #7fffd4;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1480px) {
+    main {
+        width: 40%;
+    }
+    
+    main .advice img {
+        bottom: 60px;
+    }
+
+    main > button:active {
+        box-shadow: rgb(0 255 132 / 30%) 0px 0px 20px 10px;
+    }
+
+    .attribution {
+        display: block;
+    }
+ }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    main {
+        width: 60%;
+    }
+    main .advice img {
+        bottom: 60px;
+    }
+
+    main > button:active {
+        box-shadow: rgb(0 255 132 / 30%) 0px 0px 20px 10px;
+    }
+
+    .attribution {
+        display: block;
+    }
+    
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    main {
+        width: 65%;
+    }
+
+    .attribution {
+        display: block;
+    }
+ }
