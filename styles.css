@@ -114,6 +114,7 @@ main > button img {
 
     .attribution {
         display: block;
+        padding: 20px;
     }
  }
  
@@ -131,6 +132,7 @@ main > button img {
 
     .attribution {
         display: block;
+        padding: 20px;
     }
     
 }
