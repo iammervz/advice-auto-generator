@@ -8,7 +8,7 @@ function randomAdvice() {
     fetch('https://api.adviceslip.com/advice')
     .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            //console.log(data);
             let output = `
                     <h6>Advice #${data.slip.id}</h6>
                     <p>"${data.slip.advice}"</p>
